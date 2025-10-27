@@ -166,6 +166,28 @@
   }
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .floating-heart {
   animation: float 3s ease-in-out infinite;
 }
@@ -176,4 +198,14 @@
 
 .shimmer {
   animation: shimmer 2s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slide-up 1s ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
 }
